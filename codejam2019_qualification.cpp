@@ -5,8 +5,8 @@
 using namespace std; 
 
 // Qualification Round 2019. Code Jam 2019. 
-// Foregone Solution 
-int main (){
+// Question 1 - Foregone Solution 
+int Foregone(){
     
 	long long n; 
 	cin >> n; 
@@ -34,4 +34,30 @@ int main (){
 
   return 0;
   
+}
+
+// Question 2 - Maze 
+int maze() {
+	int T; 
+	cin >> T; 
+
+	for (int i = 0; i < T;i++) {
+		int N;  
+		cin >> N; 
+
+	    string P; 
+	    cin >> P; 
+		string solution = ""; 
+		
+		for (char c : P) {
+			if (c == 'E') {
+				solution += 'S'; 
+			}
+			else {
+				solution += 'E';
+			}
+		}
+    cout << "Case #" << i+1 <<": "<< solution << "\n";
+
+	}
 }
